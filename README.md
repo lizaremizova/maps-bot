@@ -1,47 +1,53 @@
-# Картографический бот Telegram
+# Cartographic Telegram Bot
+##This project is a Telegram bot that interacts with users, allowing them to display cities on a map and manage their personal list of cities.
 
-Этот проект представляет из себя Telegram бота, который взаимодействует с пользователями, позволяя отображать города на карте и управлять списком городов пользователя.
-
-## Основные возможности
-
-- **Отображение городов на карте**: Бот может отображать выбранные города на карте с помощью Cartopy и Matplotlib.
-- **Сохранение городов**: Пользователи могут сохранять интересующие их города в свой персональный список.
-- **Просмотр сохраненных городов**: Бот предоставляет список всех сохраненных пользователем городов.
-
-## Технологии
-
-- **Python 3**: Язык программирования.
-- **SQLite**: База данных для хранения информации о пользователях и городах.
-- **Matplotlib и Cartopy**: Библиотеки для создания графического представления данных.
-- **Telebot**: Библиотека для создания и управления Telegram ботами.
-
-## Установка и запуск
-
-1. **Клонируйте репозиторий:**
-```bash
+## Key Features
+- Map Display: The bot can display selected cities on a map using Cartopy and Matplotlib.
+- City Saving: Users can save cities of interest to their personal list.
+- Viewing Saved Cities: The bot provides a list of all cities saved by the user.
+  
+## Technologies
+- Python 3: Programming language.
+- SQLite: Database for storing user and city information.
+- Matplotlib and Cartopy: Libraries for creating graphical data representations.
+- Telebot: Library for creating and managing Telegram bots.
+  
+## Clone the repository:
+```Bash
 git clone <url_to_repository>
 cd <repository_name>
 ```
-2. **Установите зависимости:**
-```bash
+
+## Install dependencies:
+```Bash
 pip install -r requirements.txt
 ```
-3. **Настройте переменные окружения:**
 
-Откройте файл config.py в корневом каталоге проекта и укажите в нем необходимые переменные:
-```bash
+## Set up environment variables:
+Open the config.py file in the root directory of the project and specify the required variables:
+
+```Bash
 TOKEN=<your_telegram_bot_token>
 ```
-4. **Запуск бота:**
-```bash
+
+## Run the bot:
+```Bash
 python bot.py
+Используйте код с осторожностью.
 ```
 
-## Использование
+## Usage
+- /start - start working with the bot and get a welcome message.
+- /help - get a list of available commands.
+- /show_city <city_name> - display the specified city on the map.
+- /remember_city <city_name> - save the city to the favorites list.
+- /show_my_cities - show all saved cities.
+- Note: Ensure that you replace <url_to_repository> with the actual URL of your GitHub repository and <your_telegram_bot_token> with the token you obtain from the BotFather.
 
-- `/start` - начать работу с ботом и получить приветственное сообщение.
-- `/help` - получить список доступных команд.
-- `/show_city <city_name>` - отобразить указанный город на карте.
-- `/remember_city <city_name>` - сохранить город в список избранных.
-- `/show_my_cities` - показать все сохраненные города.
+## Additional Considerations:
+
+- Error Handling: Consider adding error handling for cases like invalid city names, API rate limits, or database issues.
+- User Interface: Explore ways to improve the user interface, perhaps using inline keyboards or custom keyboards.
+- Map Customization: Allow users to customize the map, such as choosing different map styles or projections.
+- Data Sources: Consider using different data sources for city information, such as OpenStreetMap or Geocoding APIs.
 
