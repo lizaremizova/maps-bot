@@ -1,5 +1,5 @@
 # Cartographic Telegram Bot
-##This project is a Telegram bot that interacts with users, allowing them to display cities on a map and manage their personal list of cities.
+## This project is a Telegram bot that interacts with users, allowing them to display cities on a map and manage their personal list of cities.
 
 ## Key Features
 - Map Display: The bot can display selected cities on a map using Cartopy and Matplotlib.
